@@ -1,0 +1,144 @@
+// BLACKGROUND
+// neutral
+$bg-d-1: #111417;
+// $bg-d: #2c2b30;
+// $bg-d-2: #4f4f51;
+$bg-l-1: #d6d6d6;
+
+// Red tone
+// $bg-d-1: #182335; !!!!
+// $bg-d: #2c2c2c;
+// $bg-d: #2c2b30;
+$bg-d-2: #4f4f51;
+// $bg-l-1: #eae4cc;
+$bg-l-2: #ebebe7;
+
+// Blue tone
+// $bg-d-1: #263157;
+// primary colors
+$primary: #f53163; //
+// $primary: #f24657;
+// $primary: #fd574c;
+// $primary: #e15546;
+$primary-l-1: #eeaf9d;
+// $primary-l-2: #fef2f2;
+$primary-l-2: #eae4cc;
+// $primary: #f58f7c;
+// $primary: #fc715e;
+// $primary: #f2c4ce;
+
+// $primary: #d58ebf;
+// $primary: #e2abbe;
+// $primary: #f0d9cb;
+// $primary: #f1dfd3;
+
+// secondary
+$secondary: #7a77b9;
+$secondary-l: #bd9dea;
+$accent: #f9d326;
+// $accent: #f2c76e;
+
+// onColor
+$onBgd: #fff;
+$onBgl: #000;
+$onPrimary: #fff;
+$onSecondary: #000;
+$onaccent: #000;
+
+// Break points
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Gilda Display", serif;
+  background-color: $bg-d-1;
+  font-size: 62.5%;
+  color: $primary;
+}
+.container {
+  display: grid;
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover {
+    color: $primary-l-2;
+    transition: color 0.2s ease-out;
+  }
+}
+// Header
+.header {
+  margin-top: 1.6rem;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+}
+
+.nav-large-screen {
+  font-size: 2.4rem;
+  ul {
+    li {
+      margin: 0 30px;
+    }
+  }
+}
+.menu-opener {
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid $primary;
+  text-align: center;
+  line-height: 6.8rem;
+  .menu-opener__bar {
+    position: relative;
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 36px;
+      height: 2px;
+      background-color: $primary;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+    &::before {
+      top: -16px;
+    }
+    &::after {
+      top: 16px;
+    }
+  }
+}
+
+.logo--red {
+  border: 1px solid white;
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s cubic-bezier(0.11, 0, 0.5, 0);
+  }
+}
