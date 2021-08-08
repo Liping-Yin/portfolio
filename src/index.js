@@ -4,11 +4,14 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import { CursorContextProvider } from "./components/Cursor";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <CursorContextProvider>
+        <App />
+      </CursorContextProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

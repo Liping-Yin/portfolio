@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Cursor from "./components/Cursor";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
         </Switch>
       </main>
       <footer>footer</footer>
+      <Cursor />
     </>
   );
 }

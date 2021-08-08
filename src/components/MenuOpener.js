@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function MenuOpener() {
   return (
-    <div className="menu-opener">
+    <Link to="/about" className="menu-opener">
       <span className="menu-opener__bar"></span>
-    </div>
+    </Link>
   );
 }

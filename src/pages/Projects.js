@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Projects() {
-  return <div className="projects">Projects</div>;
+  return <div className="container container--projects">Projects</div>;
 }
