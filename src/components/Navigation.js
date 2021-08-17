@@ -7,7 +7,7 @@ export default function Navigation() {
   const windowSize = useWindowSize();
   return (
     <>
-      {windowSize.width <= 768 ? (
+      {windowSize.width <= 992 ? (
         <NavigationSmallScreen />
       ) : (
         <NavigationLargeScreen />
