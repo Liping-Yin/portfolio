@@ -3,7 +3,7 @@ import React from "react";
 export default function ScrollDown() {
   return (
     <div className="scroll-down">
-      <p>scroll</p>
+      <p>Scroll</p>
       <svg
         width="24"
         height="24"

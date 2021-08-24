@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Button() {
-    return (
-        <div className='btn'>
-            
-        </div>
-    )
+  return <div className="btn">Contact</div>;
 }

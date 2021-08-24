@@ -1,6 +1,5 @@
 import React from "react";
 import Socials from "../components/Socials";
-import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
 import BackgroundAnimation from "../components/BackgroundAnimation";
 import Projects from "./Projects";
@@ -19,7 +18,6 @@ export default function Home() {
         </div>
         <Socials />
       </div>
-
       <Projects className="home__projects" />
     </div>
   );

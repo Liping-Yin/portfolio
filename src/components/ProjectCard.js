@@ -1,14 +1,23 @@
 import React from "react";
+import numeral from "numeral";
 
-export default function ProjectCard() {
+export default function ProjectCard({
+  projectNumber,
+  type,
+  title,
+  imgUrl,
+  ...props
+}) {
   return (
     <div className="project-card">
       <h2 className="project__intro">
-        UI / UX <span>Assorted Web & Interface Design </span>
+        {type} <span>{title} </span>
       </h2>
-      <p className="project__number"> 01 </p>
+      <p className="project__number">
+        {numeral(projectNumber + 1).format("00")}
+      </p>
       <div className="project__image">
-        <img src="#" alt="project showcase" />
+        <img src={imgUrl} alt="project showcase" />
       </div>
     </div>
   );
